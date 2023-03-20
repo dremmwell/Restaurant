@@ -57,7 +57,7 @@ html, body {
     background: var(--bg-color);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     margin: 0;
-    padding: 0 ;
+    padding: 0;
 }
 
 .navBar .navList li {  
@@ -120,15 +120,54 @@ a, a:visited {
 }  
   
 .sectionContent .content em{
-    text-align: center;
+    margin: 1rem 0; 
+    line-height: 1.5rem;
+}  
+
+.sectionContent .content strong{
+    text-align: left;
+    margin: 1rem 0; 
+    line-height: 1.5rem;
 }  
  
 .sectionContent .content h1{
-    text-align: center;
     font-family: 'ZillaSlab_title';
 }  
 
 .content p {
     margin: 1rem 0; 
     line-height: 1.5rem;
-  }  
+}
+
+.button-list{
+    margin-top: 2rem;
+}
+
+button{
+    padding: 10px; 
+    margin-right: 20px;
+    border: 1px solid var(--text-color);
+    font-size: 0.9rem;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase; 
+    text-decoration: none;
+    padding: 1rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    display: inline-block;
+    background-color: var(--bg-color);
+}
+
+button:hover{
+    background-color: var(--text-color);
+    color: var(--bg-color);
+} 
+
+.sectionContent .content::after {
+    content: url('../src/divider.png');
+    display: block;
+    transform: scale(0.8);
+    text-align: center;
+    margin-top: 6rem;
+}
