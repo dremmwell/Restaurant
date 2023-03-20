@@ -1,0 +1,134 @@
+/* *{
+    border: 1px solid red;
+} */
+
+:root {
+    --text-color: #1D1D1D;
+    --bg-color: #e9e1ce;
+}
+
+@font-face {
+    font-family: 'ZillaSlab';
+    src: url(../src/fonts/ZillaSlab-Medium.ttf);
+}
+
+@font-face{
+    font-family: 'ZillaSlab_title';
+    src:url(../src/fonts/ZillaSlab-SemiBold.ttf)
+}
+
+html, body {
+    margin: 0;
+    padding: 0; 
+    height: 100%;
+    scroll-behavior: smooth;
+    background: var(--bg-color);
+    color: var(--text-color);
+} 
+
+#content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: wrap;  
+    margin: auto;
+    background: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'ZillaSlab', serif; 
+    font-weight: 500;
+    font-size: 1rem;
+}  
+
+.navBar {    
+    position: fixed;
+    width: 100%; 
+    top: 0;
+    z-index: 1;  
+    flex-flow: wrap;
+}
+
+.navBar .navList {
+    text-decoration: none;
+    width: 50%;
+    float: right;
+    display: flex;
+    justify-content: space-evenly ;
+    flex-flow: wrap;
+    background: var(--bg-color);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 0;
+    padding: 0 ;
+}
+
+.navBar .navList li {  
+    margin: 0 1rem;  
+    padding: 1rem 0.5rem;  
+}   
+
+ul {   
+    list-style: none;    
+} 
+   
+.navList li a {
+    text-decoration: none;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+}
+
+a, a:visited {
+    color: var(--text-color);
+}
+ 
+.section {
+    width: 100%;
+    min-height: 100%;
+    display: flex; 
+    flex-flow: wrap;
+    margin: auto; 
+}
+
+.sectionContent { 
+    min-height: 100%;
+    flex: 0 0 50%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sectionImage {
+    flex-grow: 1;
+    animation-name: imageFadeIn;
+    animation-duration: 10s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    background-size: cover;
+    background-position: center;
+}  
+.sectionImage.portrait {
+  flex: 0 0 50%;
+}
+ 
+.sectionImage.landscape {
+    flex: 0 0 100%;
+    max-height: 50%;
+} 
+
+.sectionContent .content {
+    padding: 15rem 10vw 10vh 10vw;
+    max-width: 1000px;
+}  
+  
+.sectionContent .content em{
+    text-align: center;
+}  
+ 
+.sectionContent .content h1{
+    text-align: center;
+    font-family: 'ZillaSlab_title';
+}  
+
+.content p {
+    margin: 1rem 0;
+    line-height: 1.5rem;
+  }  
