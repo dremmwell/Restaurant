@@ -1,1 +1,1 @@
-console.log("Hello world");
+document.getElementById("content").appendChild(function(e){const n=document.createElement("div");return["ABOUT","MENU","BOOKING","PRIVATE","CONTACT"].forEach((e=>{let t=document.createElement("li");const c=document.createElement("a");c.innerText=e,t.appendChild(c),n.appendChild(t)})),n}());
