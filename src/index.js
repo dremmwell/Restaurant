@@ -4,7 +4,6 @@ import { aboutSection } from './about';
 import { menuSection } from './menu';
 import { bookingSection } from './booking';
 
-
 const contentDiv = document.getElementById('content');
 
 contentDiv.appendChild(navBar());

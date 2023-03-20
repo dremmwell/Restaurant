@@ -73,7 +73,7 @@ function sectionText(text) {
 function bookingSection(){
     const bookingSection = document.createElement("div");
     bookingSection.classList.add("section"); 
-    bookingSection.id = "about";  
+    bookingSection.id = "booking";  
  
     bookingSection.appendChild(sectionImage());
     bookingSection.appendChild(sectionText(bookingText));

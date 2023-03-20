@@ -1,4 +1,4 @@
-let navBarItemList = ['ABOUT', 'MENU', 'BOOKING','PRIVATE', 'CONTACT'];
+let navBarItemList = ['about', 'menu', 'booking','private', 'contact'];
 
 function navBar(){
     const navBar = document.createElement('div');
@@ -8,7 +8,8 @@ function navBar(){
     navBarItemList.forEach(item => {
         let li = document.createElement("li");
         const a = document.createElement("a");
-        a.innerText = item;
+        a.innerText = item.toUpperCase();
+        a.href = `#${item}`;
         li.appendChild(a);
         ul.appendChild(li);
     });  

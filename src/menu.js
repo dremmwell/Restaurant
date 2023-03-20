@@ -85,7 +85,7 @@ function sectionText(text) {
 function menuSection(){
     const menuSection = document.createElement("div");
     menuSection.classList.add("section"); 
-    menuSection.id = "about";  
+    menuSection.id = "menu";  
  
     menuSection.appendChild(sectionImage());
     menuSection.appendChild(sectionText(menuText));
