@@ -115,7 +115,7 @@ a, a:visited {
 } 
 
 .sectionContent .content {
-    padding: 15rem 10vw 10vh 10vw;
+    padding: 10rem 10vw 10vh 10vw;
     max-width: 1000px;
 }  
   
@@ -162,6 +162,7 @@ button{
 button:hover{
     background-color: var(--text-color);
     color: var(--bg-color);
+    cursor: pointer;
 } 
 
 .sectionContent .content::after {

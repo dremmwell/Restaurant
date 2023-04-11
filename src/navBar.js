@@ -1,4 +1,4 @@
-let navBarItemList = ['about', 'menu', 'booking','private', 'contact'];
+let navBarItemList = ['about', 'menu', 'booking','contact','private'];
 
 function navBar(){
     const navBar = document.createElement('div');
